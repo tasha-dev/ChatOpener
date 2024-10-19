@@ -6,7 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["Chat Gpt", "Open Ai", "terminal", "node js"],
+  "keywords": [
+    "Chat Gpt",
+    "Open Ai",
+    "terminal",
+    "node js"
+  ],
   "author": "Mahdi Tasha",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "typescript": "^5.6.3"
+  }
 }
