@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "description": "**ChatOpener** is a Node.js application that captures user prompts from the terminal and opens a chat session with OpenAI's ChatGPT in the default browser. This simple tool enables quick interactions with AI, allowing users to easily start conversations by entering prompts, making engaging with conversational AI effortless and accessible.",
   "main": "index.js",
+  "scripts" : {
+    "start" : "node ./src/main.js"
+  },
   "keywords": [
     "Chat Gpt",
     "Open Ai",
