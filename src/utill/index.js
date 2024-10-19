@@ -16,7 +16,7 @@ export async function OpenChatGPT({query}) {
   const encodedQuery = encodeURIComponent(trimedQuery);
 
   // Opening Default web browser
-  open.default(`https://chatgpt.com/?q=${encodedQuery}`);
+  await open.default(`https://chatgpt.com/?q=${encodedQuery}`);
 }
 
 // Defining a function to ask question with prompt
@@ -31,10 +31,11 @@ export function askQuestion() {
     ) {
       console.log('Please insert correct message.');
       askQuestion();
-} else {
-      OpenChatGPT({query: message});
-      console.log(`New chat is being created in ChatGPT`);
-      rl.close();
+    } else {
+      OpenChatGPT({query: message})
+        .then(() => console.log(`New chat is being created in ChatGPT`))
+        .catch(() => console.error(`There was an error while creating new chat in ChatGPT`)) 
+        .finally(() => rl.close())
     }
   })
 }
