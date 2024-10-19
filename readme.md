@@ -27,14 +27,20 @@
    ```bash
    npm install
    ```
+3. Set your powershell with `Microsoft.PowerShell_profile.ps1` file
 
 ## Usage
 
 To start using ChatOpener, run the following command in your terminal:
 
 ```bash
-npm start
+npm start # With or without prompt ("PROMPT EXAMPLE")
 ```
+Or 
+```powershell
+ChatGpt # With or without prompt ("PROMPT EXAMPLE")
+```
+
 
 When prompted, enter your question or prompt. ChatOpener will then open a new tab in your default browser with the ChatGPT chat session based on your input.
 
