@@ -33,7 +33,7 @@
 To start using ChatOpener, run the following command in your terminal:
 
 ```bash
-npx start
+npm start
 ```
 
 When prompted, enter your question or prompt. ChatOpener will then open a new tab in your default browser with the ChatGPT chat session based on your input.
